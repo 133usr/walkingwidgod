@@ -1,0 +1,343 @@
+#prmid {
+    position: relative;
+    top: 57%;  /*increase this to list others images*/
+    
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(70, 73, 240, 0.24));
+    filter: drop-shadow(2px 5px 5px rgba(126, 128, 223, 0.432));
+    animation: prm_move 12s 0s 1;
+    left: -30%;
+    animation-fill-mode: forwards; animation-delay: 6s;
+    
+} @keyframes prm_move {
+    0% {
+        left: -30%;
+    }
+    100% {
+        left: var(--prmdata); /*to move image to desired location */
+    }
+}
+.prm {
+    width: 160px;
+    height: auto;
+}
+
+#msid{
+    position: relative;
+    width: auto;
+    top: 57%;  /*increase this to list others images*/
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(70, 73, 240, 0.24));
+    filter: drop-shadow(2px 5px 5px rgba(126, 128, 223, 0.432));
+    animation: ms_move 12s 0s 1;
+    left: -30%;
+    animation-fill-mode: forwards; animation-delay: 6s;
+    
+} @keyframes ms_move {
+    0% {
+        left: -30%;
+    }
+    100% {
+        left: var(--msdata); /*to move image to desired location */
+    }
+}
+.ms{
+  width: 160px;
+  height: auto;
+}
+
+
+#pjid{
+    position: relative;
+    
+    top: 57%;  /*increase this to list others images*/
+    width: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(70, 73, 240, 0.24));
+    filter: drop-shadow(2px 5px 5px rgba(126, 128, 223, 0.432));
+    animation: pj_move 12s 0s 1;
+    left: -30%;
+    animation-fill-mode: forwards; animation-delay: 6s;
+    
+} @keyframes pj_move {
+    0% {
+        left: -30%;
+    }
+    100% {
+        left: var(--pjdata); /*to move image to desired location */
+    }
+}
+.pj{
+  width: 160px;
+  height: auto;
+}
+
+
+
+#marmyid{
+    position: relative;
+    top: 57%;  /*increase this to list others images*/
+    width: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(70, 73, 240, 0.24));
+    filter: drop-shadow(2px 5px 5px rgba(126, 128, 223, 0.432));
+    animation: marmy_move 12s 0s 1;
+    left: -30%;
+    animation-fill-mode: forwards; animation-delay: 6s;
+
+} 
+
+@keyframes marmy_move {
+    0% {
+        left: -30%;
+    }
+    100% {
+        left: var(--marmydata); /*to move image to desired location */
+    }
+} 
+.marmy{
+  width: 160px;
+  height: auto;
+}
+
+
+/*SCORE BOARD ARE CSS HERE*/
+
+
+.pjnameclass{
+    font-size: 1.5em;
+  left: 16%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 40vh; 
+}
+#pjscore{
+    font-size: 1.5em;
+  left: 40%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 40vh; 
+}
+
+.prmnameclass{
+    font-size: 1.5em;
+  left: 16%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 44vh; 
+}
+#prmscore{
+    font-size: 1.5em;
+  left: 40%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 44vh; 
+}
+
+.msnameclass{
+    font-size:1.5em;
+  left: 16%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 48vh; 
+}
+
+#msscore{
+    font-size: 1.5em;
+  left: 40%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 48vh; 
+}
+
+.marmyameclass{
+    font-size: 1.5em;
+  left: 16%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 52vh; 
+}
+
+#marmyscore{
+    font-size: 1.5em;
+  left: 40%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 52vh; 
+}
+
+
+
+
+
+.thinkclass{
+    font-size: 1.5em;
+  left: 1%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 36vh; 
+}
+#thinkscore{
+    font-size: 1.5em;
+  left: 20%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 36vh; 
+}
+
+.forcefullclass{
+    font-size: 1.5em;
+  left: 1%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 44vh; 
+}
+#forcescore{
+    font-size: 1.5em;
+  left: 20%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 44vh; 
+}
+
+.powerclass{
+    font-size:1.5em;
+  left: 1%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 52vh; 
+}
+
+#powerscore{
+    font-size: 1.5em;
+  left: 20%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 52vh; 
+}
+
+.todayclass{
+    font-size:1.5em;
+  left: 1%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 58vh; 
+}
+
+#today{
+    font-size: 1.5em;
+  left: 20%;
+  text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
+  margin-top: -0.7em;
+  position: absolute;
+  width: 100%;
+  top: 58vh; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+ #pjid2{
+    position: absolute;
+    
+    top: 10vh;
+    left: 20%;
+    height: 90px;
+    text-align: center;
+    
+    
+    
+    visibility: hidden;
+    opacity: 0;
+    
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+    font-size:      300px;
+    color: rgb(225, 226, 236);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(25, 25, 248), 0 0 5px rgb(21, 21, 248); 
+    box-shadow: 0 4px 6px -5px hsl(0, 73%, 49%), inset 0px 4px 6px -5px rgb(180, 25, 25); 
+    border-radius: 2em; 
+   }
+   
+   #pjid:hover 
+{
+    cursor: pointer;
+    transform: scale(2.0);
+       }
+  */ 
+  
+/*HoverING EFFECTS */
+
+   /* Child Text Container 
+
+   .rcy + div, .pj + div, .marmy + div, .ms + div{
+    position: fixed;
+    bottom: 0;
+    left: 68%;
+    background: rgba(0, 0, 0, 0.411);
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+    font-size:      30px;
+    color: rgb(146, 162, 255);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(25, 25, 248), 0 0 5px rgb(21, 21, 248); 
+    box-shadow: 0 4px 6px -5px hsl(0, 73%, 49%), inset 0px 4px 6px -5px rgb(180, 25, 25); 
+    border-radius: 2em; 
+   }
+   
+   
+   .rcy:Hover, .pj:Hover, .marmy:Hover,  .ms:Hover
+{
+    cursor: pointer;
+    transform: scale(2.0);
+   }
+   
+   .rcy:Hover + div, .pj:Hover + div, .marmy:Hover + div,  .ms:Hover + div
+
+{
+    width: 300px;
+    padding: 8px 10px;
+    
+    visibility: visible;
+    opacity: 0.9; 
+   }
+
+   */
