@@ -13,7 +13,7 @@
         left: -30%;
     }
     100% {
-        left: 160%; /*to move image to desired location */
+        left: var(--t_1data); /*to move image to desired location */
     }
 }
 .t_1 {
@@ -41,7 +41,7 @@
         left: -30%;
     }
     100% {
-        left: 180%; /*to move image to desired location */
+        left: var(--t_2data); /*to move image to desired location */
     }
 } 
 .t_2{
@@ -67,7 +67,7 @@
         left: -30%;
     }
     100% {
-        left: 140%; /*to move image to desired location */
+        left: var(--t_3data); /*to move image to desired location */
     }
 }
 .t_3{
