@@ -13,7 +13,7 @@
         left: -30%;
     }
     100% {
-        left: var(--t_1data); /*to move image to desired location */
+        left: -30%; /*  var(--t_1data);  to move image to desired location */
     }
 }
 .t_1 {
@@ -41,7 +41,7 @@
         left: -30%;
     }
     100% {
-        left: var(--t_2data); /*to move image to desired location */
+        left: -60%; /* var(--t_2data) to move image to desired location */
     }
 } 
 .t_2{
@@ -67,7 +67,7 @@
         left: -30%;
     }
     100% {
-        left: var(--t_3data); /*to move image to desired location */
+        left: 80%; /* var(--t_3data) to move image to desired location */
     }
 }
 .t_3{
@@ -92,7 +92,7 @@
         left: -30%;
     }
     100% {
-        left: var(--t_4data); /*to move image to desired location */
+        left: 10%;  /*  var(--t_4data)   to move image to desired location */
     }
 }
 .t_4{
