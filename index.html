@@ -70,18 +70,18 @@ Deleting three lights -->
 				</ul>
 			</li>
 			<li class="layer" data-depth="0.10"><h1 class="title"><em>परमेश्वर के साथ साथ </em><br>चलना !</h1></li>
-			<li class="layer" data-depth="0.10"><div> <p  id="pjscore">score</p><h2 class="pjnameclass">Pillars of <em> Jerusalem </em></h2></div></li>
-			<li class="layer" data-depth="0.10"><div> <h3  id="prmscore">score</h3><h2 class="prmnameclass"> <em> Love </em></h2></div></li>
-			<li class="layer" data-depth="0.10"><div> <h3  id="msscore">score</h3><h2 class="msnameclass">Mother's<em> Stars </em></h2></div></li>
-			<li class="layer" data-depth="0.10"><div> <h3  id="marmyscore">score</h3><h2 class="marmyameclass"> Mother's <em>Army</em></h2></div></li>
+			<li class="layer" data-depth="0.10"><div> <h3  id="t_4_score">score</h3><h2 class="t_4_name_class"> यरूशलेम के<em>योद्धा </em></h2></div></li>
+			<li class="layer" data-depth="0.10"><div> <h3  id="t_1_score">score</h3><h2 class="t_1_name_class"> <em>गिदोन</em></h2></div></li>
+			<li class="layer" data-depth="0.10"><div> <h3  id="t_2_score">score</h3><h2 class="t_2_name_class">सुसमाचार के <em> सैनिक </em></h2></div></li>
+			<li class="layer" data-depth="0.10"><div> <h3  id="t_3_score">score</h3><h2 class="t_3_name_class">यहोशू की <em>सेना</em></h2></div></li>
 <!--			<li class="layer" data-depth="0.10"><div> <h3  id="team5score">score</h3><h2 class="team5nameclass"> <em>Animo!</em></h2></div></li> -->
 			<!--<li class="layer" data-depth="0.40"><h3 id="rcyscore" class="score2">Mornings Dew<em><br> Youth & Students</em></h3></li>
-			<li class="layer" data-depth="0.50"><h3 id="msscore" class="score3">Mornings Dew<em><br> Youth & Students</em></h3></li>
-			<li class="layer" data-depth="0.60"><h3 id="marmyscore" class="score4">Mornings Dew<em><br> Youth & Students</em></h3></li>-->
-<!--roya blood--><li class="layer" data-depth="0.20"><div id="pjid"  ><img src="./assets/images/t1.gif"  class="board pj "></div></li>	
-<!--royal challenger--><li class="layer" data-depth="0.20"><div id="prmid"><img src="./assets/images/t2.gif" class="board prm  "></div></li>
-<!--warrior of truth--> <li class="layer" data-depth="0.20"><div id="marmyid"><img src="./assets/images/t3.gif" class="board marmy "></div>	</li>
-<!--servants of mother--><li class="layer" data-depth="0.20"><div id="msid"><img src="./assets/images/t4.gif" class="board ms "></div>	</li>
+			<li class="layer" data-depth="0.50"><h3 id="t_2_score" class="score3">Mornings Dew<em><br> Youth & Students</em></h3></li>
+			<li class="layer" data-depth="0.60"><h3 id="t_3_score" class="score4">Mornings Dew<em><br> Youth & Students</em></h3></li>-->
+<!--roya blood--><li class="layer" data-depth="0.20"><div id="t_4_id"  ><img src="./assets/images/t4.gif"  class="board t_4 "></div></li>	
+<!--royal challenger--><li class="layer" data-depth="0.20"><div id="t_1_id"><img src="./assets/images/t1.gif" class="board t_1  "></div></li>
+<!--warrior of truth--> <li class="layer" data-depth="0.20"><div id="t_2_id"><img src="./assets/images/t2.gif" class="board t_2 "></div>	</li>
+<!--servants of mother--><li class="layer" data-depth="0.20"><div id="t_3_id"><img src="./assets/images/t3.gif" class="board t_3 "></div>	</li>
 <!--servants of mother<li class="layer" data-depth="0.20"><div id="t5id"><img src="./assets/images/t.gif" class="board team5 swing-2"></div>	</li> -->
 			<li class="layer" data-depth="0.30">
 				<ul class="rope depth-30">
@@ -282,59 +282,59 @@ Deleting three lights -->
 <script> 
 
 // TRYING TO NORMALIZE ; THAT IS NO NUMBER SCROLLS
-function loadScore (){
+function loadScore (){ https://docs.google.com/spreadsheets/d/e/2PACX-1vQgGVCkiEIqgEUQXFai3HUE5Z16kmKgBXAbtM49zPSWZIq7ADyWVj5gPT_D8kKDrBusIGfnfmtlrhxv/pub?gid=1203789969&single=true&output=csv
   // ========================================================================================================================================================================================
-  url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR45xjRksAnj4s3bWcLyARSjUWp7hY7rYcATEPty0MHEPdMT6-2WH2In9bjldlgTHSkR2SQn5Jl8tCm/pub?gid=1203789969&single=true&output=csv&range=h2";
+  url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQgGVCkiEIqgEUQXFai3HUE5Z16kmKgBXAbtM49zPSWZIq7ADyWVj5gPT_D8kKDrBusIGfnfmtlrhxv/pub?gid=1203789969&single=true&output=csv&range=h2";
 	// 1 Prem score         
                 fetch(url) 
                 .then(response => response.text())
                 .then(text => {
                  console.log(text)
-				 document.querySelector("#prmscore").innerHTML = text
+				 document.querySelector("#t_1_score").innerHTML = text
                        } 
                     //pass url value to variable
                   ); delete url;
                      delete text;
  // =====================================================================================================================================================================================================       
-            url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR45xjRksAnj4s3bWcLyARSjUWp7hY7rYcATEPty0MHEPdMT6-2WH2In9bjldlgTHSkR2SQn5Jl8tCm/pub?gid=1203789969&single=true&output=csv&range=h4";
+            url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQgGVCkiEIqgEUQXFai3HUE5Z16kmKgBXAbtM49zPSWZIq7ADyWVj5gPT_D8kKDrBusIGfnfmtlrhxv/pub?gid=1203789969&single=true&output=csv&range=h5";
 // 2 Pillar of jerusalme score       
                 fetch(url) 
                 .then(response => response.text())
                 .then(text => {
                  console.log(text)
-				 document.querySelector("#pjscore").innerHTML = text
+				 document.querySelector("#t_4_score").innerHTML = text
                    } 
                     //pass url value to variable
                   ); delete url;
                      delete text; 
 // =====================================================================================================================================================================================================       
-               url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR45xjRksAnj4s3bWcLyARSjUWp7hY7rYcATEPty0MHEPdMT6-2WH2In9bjldlgTHSkR2SQn5Jl8tCm/pub?gid=1203789969&single=true&output=csv&range=h5";
+               url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQgGVCkiEIqgEUQXFai3HUE5Z16kmKgBXAbtM49zPSWZIq7ADyWVj5gPT_D8kKDrBusIGfnfmtlrhxv/pub?gid=1203789969&single=true&output=csv&range=h4";
 	// 3 mother army         
                 fetch(url) 
                 .then(response => response.text())
                 .then(text => {
                  console.log(text)
-                 document.querySelector("#marmyscore").innerHTML = text
+                 document.querySelector("#t_3_score").innerHTML = text
                  } 
                     //pass url value to variable
                   ); delete url;
                      delete text;
 					 
 // =====================================================================================================================================================================================================       
-         url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR45xjRksAnj4s3bWcLyARSjUWp7hY7rYcATEPty0MHEPdMT6-2WH2In9bjldlgTHSkR2SQn5Jl8tCm/pub?gid=1203789969&single=true&output=csv&range=h3";
+         url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQgGVCkiEIqgEUQXFai3HUE5Z16kmKgBXAbtM49zPSWZIq7ADyWVj5gPT_D8kKDrBusIGfnfmtlrhxv/pub?gid=1203789969&single=true&output=csv&range=h3";
 	// 4 mother servants         
                 fetch(url) 
                 .then(response => response.text())
                 .then(text => {
                  console.log(text)
-                 document.querySelector("#msscore").innerHTML = text
+                 document.querySelector("#t_2_score").innerHTML = text
                  } 
                     //pass url value to variable
                   ); delete url;
                      delete text;
 
 // =====================================================================================================================================================================================================       
-               url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR45xjRksAnj4s3bWcLyARSjUWp7hY7rYcATEPty0MHEPdMT6-2WH2In9bjldlgTHSkR2SQn5Jl8tCm/pub?gid=1203789969&single=true&output=csv&range=h6";
+               url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQgGVCkiEIqgEUQXFai3HUE5Z16kmKgBXAbtM49zPSWZIq7ADyWVj5gPT_D8kKDrBusIGfnfmtlrhxv/pub?gid=1203789969&single=true&output=csv&range=h6";
 	// 5 animo         
                 fetch(url) 
                 .then(response => response.text())
@@ -373,7 +373,7 @@ function loadScore (){
 	delete url;  //both variables initialized
 	delete text;
 
-	url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR45xjRksAnj4s3bWcLyARSjUWp7hY7rYcATEPty0MHEPdMT6-2WH2In9bjldlgTHSkR2SQn5Jl8tCm/pub?gid=1203789969&single=true&output=csv&range=h2";
+	url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQgGVCkiEIqgEUQXFai3HUE5Z16kmKgBXAbtM49zPSWZIq7ADyWVj5gPT_D8kKDrBusIGfnfmtlrhxv/pub?gid=1203789969&single=true&output=csv&range=h2";
 								// Took total sign from google sheets 
 	
 	fetch(url) 
@@ -387,7 +387,7 @@ function loadScore (){
 		testvalue();
 		
 		count1=count1 + 5;
-		document.querySelector("#prmscore").innerHTML = count1
+		document.querySelector("#t_1_score").innerHTML = count1
 		if (count1 > url1 ) {
 			clearInterval(prm)
 		}
@@ -398,7 +398,7 @@ function loadScore (){
 		delete url;  //both variables initialized
 		delete text;
 
-	url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR45xjRksAnj4s3bWcLyARSjUWp7hY7rYcATEPty0MHEPdMT6-2WH2In9bjldlgTHSkR2SQn5Jl8tCm/pub?gid=1203789969&single=true&output=csv&range=h4";
+	url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQgGVCkiEIqgEUQXFai3HUE5Z16kmKgBXAbtM49zPSWZIq7ADyWVj5gPT_D8kKDrBusIGfnfmtlrhxv/pub?gid=1203789969&single=true&output=csv&range=h4";
 										// Took total sign from google sheets          
 	fetch(url) 
 	.then(response => response.text())
@@ -410,7 +410,7 @@ function loadScore (){
 	function pjtot() {
 		testvalue2 (); 
 		count2=count2 + 5;
-		document.querySelector("#pjscore").innerHTML = count2
+		document.querySelector("#t_4_score").innerHTML = count2
 		if (count2 > url2 ) {
 			clearInterval(pj)
 		}
@@ -421,7 +421,7 @@ function loadScore (){
 		delete url;  //both variables initialized
 		delete text;
 		
-	url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR45xjRksAnj4s3bWcLyARSjUWp7hY7rYcATEPty0MHEPdMT6-2WH2In9bjldlgTHSkR2SQn5Jl8tCm/pub?gid=1203789969&single=true&output=csv&range=h5";
+	url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQgGVCkiEIqgEUQXFai3HUE5Z16kmKgBXAbtM49zPSWZIq7ADyWVj5gPT_D8kKDrBusIGfnfmtlrhxv/pub?gid=1203789969&single=true&output=csv&range=h5";
 														// Took total sign from google sheets          
 	fetch(url) 
 	.then(response => response.text())
@@ -434,7 +434,7 @@ function loadScore (){
 		 testvalue3 (); //call fetch to give set fetched value to variable
 
 		count3=count3 + 5;
-		document.querySelector("#marmyscore").innerHTML = count3
+		document.querySelector("#t_3_score").innerHTML = count3
 		if (count3 > url3) {
 			clearInterval(marmy)
 		}
@@ -446,7 +446,7 @@ function loadScore (){
 		delete url;  //both variables initialized
 		delete text;
 		
-	url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR45xjRksAnj4s3bWcLyARSjUWp7hY7rYcATEPty0MHEPdMT6-2WH2In9bjldlgTHSkR2SQn5Jl8tCm/pub?gid=1203789969&single=true&output=csv&range=h3";
+	url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQgGVCkiEIqgEUQXFai3HUE5Z16kmKgBXAbtM49zPSWZIq7ADyWVj5gPT_D8kKDrBusIGfnfmtlrhxv/pub?gid=1203789969&single=true&output=csv&range=h3";
 														// Took total sign from google sheets          
 	fetch(url) 
 	.then(response => response.text())
@@ -459,7 +459,7 @@ function loadScore (){
 		testvalue4 (); //call fetch to give set fetched value to variable
 
 		count4=count4 + 5;
-		document.querySelector("#msscore").innerHTML = count4
+		document.querySelector("#t_2_score").innerHTML = count4
 		if (count4 > url4 ) {
 			clearInterval(ms)
 		}
@@ -472,7 +472,7 @@ function loadScore (){
 		delete url;  //both variables initialized
 		delete text;
 		
-	url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR45xjRksAnj4s3bWcLyARSjUWp7hY7rYcATEPty0MHEPdMT6-2WH2In9bjldlgTHSkR2SQn5Jl8tCm/pub?gid=1203789969&single=true&output=csv&range=h6";
+	url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQgGVCkiEIqgEUQXFai3HUE5Z16kmKgBXAbtM49zPSWZIq7ADyWVj5gPT_D8kKDrBusIGfnfmtlrhxv/pub?gid=1203789969&single=true&output=csv&range=h6";
 														// Took total sign from google sheets          
 	fetch(url) 
 	.then(response => response.text())

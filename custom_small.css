@@ -1,104 +1,109 @@
-#prmid {
+#t_1_id {
     position: relative;
     top: 20%;  /*increase this to list others images*/
     
     -webkit-filter: drop-shadow(5px 5px 5px rgba(70, 73, 240, 0.24));
     filter: drop-shadow(2px 5px 5px rgba(126, 128, 223, 0.432));
-    animation: prm_move 12s 0s 1;
+    animation: t_1_move 12s 0s 1;
     left: -30%;
     animation-fill-mode: forwards; animation-delay: 6s;
     
-} @keyframes prm_move {
+} @keyframes t_1_move {
     0% {
         left: -30%;
     }
     100% {
-        left: var(--prmdata); /*to move image to desired location */
+        left: var(--t_1data); /*to move image to desired location */
     }
 }
-.prm {
+.t_1 {
     height: 60px;
     width: auto;
 }
 
-#msid{
+
+
+#t_2_id{
     position: relative;
-    width: auto;
     top: 40%;  /*increase this to list others images*/
+    width: auto;
     -webkit-filter: drop-shadow(5px 5px 5px rgba(70, 73, 240, 0.24));
     filter: drop-shadow(2px 5px 5px rgba(126, 128, 223, 0.432));
-    animation: ms_move 12s 0s 1;
+    animation: t2_move 12s 0s 1;
     left: -30%;
     animation-fill-mode: forwards; animation-delay: 6s;
     
-} @keyframes ms_move {
+} 
+
+@keyframes t2_move {
     0% {
         left: -30%;
     }
     100% {
-        left: var(--msdata); /*to move image to desired location */
+        left: var(--t_2data); /*to move image to desired location */
     }
-}
-.ms{
+} 
+.t_2{
     height: 60px;
     width: auto;
 }
 
 
-#pjid{
+
+
+#t_3_id{
     position: relative;
-    
+    width: auto;
     top: 60%;  /*increase this to list others images*/
-    width: auto;
     -webkit-filter: drop-shadow(5px 5px 5px rgba(70, 73, 240, 0.24));
     filter: drop-shadow(2px 5px 5px rgba(126, 128, 223, 0.432));
-    animation: pj_move 12s 0s 1;
+    animation: t3_move 12s 0s 1;
     left: -30%;
     animation-fill-mode: forwards; animation-delay: 6s;
     
-} @keyframes pj_move {
+} @keyframes t3_move {
     0% {
         left: -30%;
     }
     100% {
-        left: var(--pjdata); /*to move image to desired location */
+        left: var(--t_3data); /*to move image to desired location */
     }
 }
-.pj{
+.t_3{
     height: 60px;
     width: auto;
 }
 
 
-
-#marmyid{
+#t_4_id{
     position: relative;
+    
     top: 80%;  /*increase this to list others images*/
     width: auto;
     -webkit-filter: drop-shadow(5px 5px 5px rgba(70, 73, 240, 0.24));
     filter: drop-shadow(2px 5px 5px rgba(126, 128, 223, 0.432));
-    animation: marmy_move 12s 0s 1;
+    animation: t4_move 12s 0s 1;
     left: -30%;
     animation-fill-mode: forwards; animation-delay: 6s;
     
-} 
-
-@keyframes marmy_move {
+} @keyframes t4_move {
     0% {
         left: -30%;
     }
     100% {
-        left: var(--marmydata); /*to move image to desired location */
+        left: var(--t_4data); /*to move image to desired location */
     }
-} 
-.marmy{
+}
+.t_4{
     height: 60px;
     width: auto;
 }
 
+
+
 /*SCORE BOARD ARE CSS HERE*/
 
-.pjnameclass{
+.t_4_name_class{
     font-size: 1.5em;
   right: 26%;
   text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
@@ -107,7 +112,7 @@
   width: 100%;
   top: 52vh; 
 }
-#pjscore{
+#t_4_score{
     font-size: 1.5em;
   right: 6%;
   text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
@@ -117,7 +122,7 @@
   top: 52vh; 
 }
 
-.prmnameclass{
+.t_1_name_class{
     font-size: 1.5em;
   right: 26%;
   text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
@@ -126,7 +131,7 @@
   width: 100%;
   top: 40vh; 
 }
-#prmscore{
+#t_1_score{
     font-size: 1.5em;
   right: 6%;
   text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
@@ -136,7 +141,7 @@
   top: 40vh; 
 }
 
-.msnameclass{
+.t_2_name_class{
     font-size:1.5em;
   right: 26%;
   text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
@@ -146,7 +151,7 @@
   top: 44vh; 
 }
 
-#msscore{
+#t_2_score{
     font-size: 1.5em;
   right: 6%;
   text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
@@ -156,7 +161,7 @@
   top: 44vh; 
 }
 
-.marmyameclass{
+.t_3_name_class{
     font-size: 1.5em;
   right: 26%;
   text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
@@ -166,7 +171,7 @@
   top: 48vh; 
 }
 
-#marmyscore{
+#t_3_score{
     font-size: 1.5em;
   right: 6%;
   text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
@@ -262,7 +267,7 @@
 
 
 /*
- #pjid2{
+ #t_4_id2{
     position: absolute;
     
     top: 10vh;
@@ -284,7 +289,7 @@
     border-radius: 2em; 
    }
    
-   #pjid:hover 
+   #t_4_id:hover 
 {
     cursor: pointer;
     transform: scale(2.0);
@@ -295,7 +300,7 @@
 
    /* Child Text Container 
 
-   .rcy + div, .pj + div, .marmy + div, .ms + div{
+   .rcy + div, .t_4 + div, .t_2rmy + div, .t_3 + div{
     position: fixed;
     bottom: 0;
     left: 68%;
@@ -315,13 +320,13 @@
    }
    
    
-   .rcy:Hover, .pj:Hover, .marmy:Hover,  .ms:Hover
+   .rcy:Hover, .t_4:Hover, .t_2rmy:Hover,  .t_3:Hover
 {
     cursor: pointer;
     transform: scale(2.0);
    }
    
-   .rcy:Hover + div, .pj:Hover + div, .marmy:Hover + div,  .ms:Hover + div
+   .rcy:Hover + div, .t_4:Hover + div, .t_2rmy:Hover + div,  .t_3:Hover + div
 
 {
     width: 300px;
