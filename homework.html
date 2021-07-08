@@ -8,7 +8,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Go Back to my Home</title>
+	<title>Walking With God</title>
 	<!--main javascript-->
 	<script type="text/javascript" src="moveit.js"></script>
 	
@@ -21,7 +21,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
-<body onload= " loadData();">
+<body onload= " loadMissionData();">
 <!--	redifining classes	
 		royal chal				prem						rcy-- t_1  done in all four files
 		royal blooad			pillar of jersalem			rb --pj		done in all four files
@@ -31,19 +31,29 @@
 
 -->
 
-	<div id="fb-root"></div>
+<div id="fb-root"></div>
 
-	<div id="container" class="wrapper">
-		<ul id="scene" class="scene unselectable"
-			data-friction-x="0.1"
-			data-friction-y="0.1"
-			data-scalar-x="250"
-			data-scalar-y="15">
-			<li class="layer" data-depth="0.00"></li>
-			<li class="layer" data-depth="0.08"><div class="background"></div></li>
-			<li class="layer" data-depth="0.10"><div class="light orange b phase-4"></div></li>
-			<li class="layer" data-depth="0.10"><div class="light purple c phase-5"></div></li>
-			<li class="layer" data-depth="0.10"><div class="light orange d phase-3"></div></li>
+<div id="container" class="wrapper">
+	<ul id="scene" class="scene unselectable"
+		data-friction-x="0.1"
+		data-friction-y="0.1"
+		data-scalar-x="1000"
+		data-scalar-y="35">
+		<li class="layer" data-depth="0.00"></li>
+		<li class="layer" data-depth="0.10">
+		<div class="background"><video  autoplay muted loop id="videoloop">
+			<source src="assets/clouds.mp4" type="video/mp4">
+		  </video></div></li>
+
+<!--
+
+		<li class="layer" data-depth="0.10"><div class="light orange b phase-4"></div></li>
+		<li class="layer" data-depth="0.10"><div class="light purple c phase-5"></div></li>
+		<li class="layer" data-depth="0.10"><div class="light orange d phase-3"></div></li>
+
+Deleting three lights -->
+
+
 			<li class="layer" data-depth="0.15">
 				<ul class="rope depth-10">
 					<!--<li><img src="assets/images/rope.png" alt="Rope"></li>-->
@@ -59,10 +69,10 @@
 					</li>
 				</ul>
 			</li>
-			<li class="layer" data-depth="0.20"><h1 class="title"><em>क्या आज भी </em><br> <strong>आप तैयार हैं ?</strong></h1></li>
-			<li class="layer" data-depth="0.30"><div><h3  id="thinkscore">please_wait...</h3><h2 class="thinkclass"><strong>स्वर्ग के बारे में सोचना</strong></h2></div></li>
-			<li class="layer" data-depth="0.30"><div> <h3  id="forcescore">please_wait...</h3><h2 class="forcefullclass"><strong>स्वर्ग में बलपूर्वक प्रवेश करना</strong></h2></div></li>
-			<li class="layer" data-depth="0.30"><div> <h3  id="powerscore">please_wait...</h3><h2 class="powerclass"><strong>आत्मिक शक्ति इखट्ठा करना</strong></h2></div></li>
+			<li class="layer" data-depth="0.20"><h1 class="title"><em>परमेश्वर के साथ साथ </em><br> <strong>चलना</strong></h1></li>
+			<li class="layer" data-depth="0.30"><div><h3  id="thinkscore">please_wait...</h3><h2 class="thinkclass"><strong>नए गीत सुनना </strong></h2></div></li>
+			<li class="layer" data-depth="0.30"><div> <h3  id="forcescore">please_wait...</h3><h2 class="forcefullclass"><strong>उपदेश पुस्तक (साइन लेना)</strong></h2></div></li>
+			<li class="layer" data-depth="0.30"><div> <h3  id="powerscore">please_wait...</h3><h2 class="powerclass"><strong>बाइबिल पढ़ना</strong></h2></div></li>
 			<!--<li class="layer" data-depth="0.40"><h3 id="rcyscore" class="score2">Mornings Dew<em><br> Youth & Students</em></h3></li>
 			<li class="layer" data-depth="0.50"><h3 id="t_2_score" class="score3">Mornings Dew<em><br> Youth & Students</em></h3></li>
 			<li class="layer" data-depth="0.60"><h3 id="t_3_score" class="score4">Mornings Dew<em><br> Youth & Students</em></h3></li>-->
@@ -103,31 +113,35 @@
 					</li>
 				</ul>
 			</li>
+				<!--
 			<li class="layer" data-depth="0.60"><div class="wave plain depth-60"></div></li>
 			<li class="layer" data-depth="0.80"><div class="wave plain depth-80"></div></li>
 			<li class="layer" data-depth="1.00"><div class="wave paint depth-100"></div></li>
+
+			Deleting waves -->
 		</ul>
 		 <section id="about" class="wrapper about hide accelerate">
 			<div class="cell accelerate">
 				<div class="cables center accelerate">
 					<div class="panel accelerate">
 						<header>
-							<h2><em>मेरे घर स्वर्ग</em> वापस जाने दें !</h2>
+							<h1><em>परमेश्वर के साथ साथ </em>चलना !</h1>
 						</header>
-						<p>आप कहां जा रहे हैं ?<strong> आप वहां जाने के लिए अब क्या कर रहे हैं?</strong> <br>मैं स्वर्ग जा रही हूं और वहां जाने के लिए <strong>"मैं हर उत्तम प्रयास कर रही हूं"</strong></p> 
-						<p>जब पिताजी आपसे पूछते हैं कि <em>"क्या आप तैयार हैं ?"</em> <br> तो आईये हम हिम्मत से उत्तर दें <em>"मैं आज तैयार हूँ~!"</em></p>
-						<p><strong>स्वर्ग के बारे में सोचना </strong>- नए गीत सुनना 
-							<br><strong>स्वर्ग में बलपूर्वक प्रवेश करना </strong>- उपदेश पुस्तक  
-							<br><strong>बहनों को आशीष पाने दूँ </strong>- साइन देना  
-							<br><strong>आत्मिक शक्ति इखट्ठा करना </strong>- बाइबिल पढ़ना  
-							<br><strong>पिता की इक्छा पालन </strong>- प्रचार / अपॉइंटमेंट </p>
-							<p>1 नाव 1 टीम को दर्शाती है,वह गूगल शीट में डाले गए अंकों के अनुसार आगे बढ़ती है 
-							<br> यदि आपको यह वेबसाइट सही से नहीं दिखती तो <a href="https://play.google.com/store/apps/details?id=org.mozilla.rocket"><em>यहां क्लिक करके </em> </a><strong>Firefox</strong> डाउनलोड करें और इस वेबसाइट को <strong>Firefox</strong>के द्वारा खोलें	</a>
-							</p>
+						<p>जैसे हनोक परमेश्वर के साथ साथ चलते हुए स्वर्ग में उठा लिया गया ! (उत्प 5:21-24)
+							<br> <br><strong> वैसे ही 1,44,000 भी जीवित स्वर्ग में उठा लिए जायेंगे !</strong> <br><br><strong>"ये वे हैं, जो जहाँ कहीं मेमना जाता है उसके पीछे हो लेते हैं !" </strong></p> 
+						<p> <em>"आईये हम आज भी ख़ुशी से परमेश्वर  के साथ साथ चलें "</em> <br>  </p>
+						<p><strong>नए गीत सुनना </strong> = 2
+							<br><strong>उपदेश पुस्तक</strong> = 10
+							<br><strong>साइन देना</strong> = 5
+							<br><strong>बाइबिल पढ़ना</strong> = 3 
+							<br><strong>प्रचार / अपॉइंटमेंट</strong> = 30
+							<br><strong>परमेश्वर के साथ साथ चलना </strong> = 50
+							<br><br><strong>आज का मिशन पूरा ना करने पर 30 अंक घटा दिए जाएंगे </strong></p>
+							
 						
 						<ul class="links">
-							<li><a class="github" href="https://docs.google.com/spreadsheets/d/1oScMM_-6pzEPcJiQQ4KdRRJxPatDqeeoDyGBWxYW5cQ/edit?usp=sharing">गूगल शीट</a></li>
-							<li><a class="github" href="index.html">वापस जाएँ </a></li>
+							<li><a class="github" href="https://docs.google.com/spreadsheets/d/19xSQOHvjoNPveM5WC9Lm1SZkhyYPqWEt6mYZKPrKZxs/edit?usp=sharing">गूगल शीट</a></li>
+							<li><a class="github" href="homework.html">	आज का मिशन !</a></li>
 						</ul>
 					</div>
 				</div>
@@ -269,9 +283,9 @@
 */	
 	// ========================================================================================================================================================================================
 // TRYING TO NORMALIZE ; THAT IS NO NUMBER SCROLLS
-function loadData (){
+function loadMissionData (){
   // ========================================================================================================================================================================================
-               url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR45xjRksAnj4s3bWcLyARSjUWp7hY7rYcATEPty0MHEPdMT6-2WH2In9bjldlgTHSkR2SQn5Jl8tCm/pub?gid=1203789969&single=true&output=csv&range=b19";
+               url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQgGVCkiEIqgEUQXFai3HUE5Z16kmKgBXAbtM49zPSWZIq7ADyWVj5gPT_D8kKDrBusIGfnfmtlrhxv/pub?gid=1203789969&single=true&output=csv&range=b19";
  // 1 think of heaven         
                 fetch(url) 
                 .then(response => response.text())
@@ -283,7 +297,7 @@ function loadData (){
                   ); delete url;
                      delete text;
  // =====================================================================================================================================================================================================       
-              url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR45xjRksAnj4s3bWcLyARSjUWp7hY7rYcATEPty0MHEPdMT6-2WH2In9bjldlgTHSkR2SQn5Jl8tCm/pub?gid=1203789969&single=true&output=csv&range=b20";
+              url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQgGVCkiEIqgEUQXFai3HUE5Z16kmKgBXAbtM49zPSWZIq7ADyWVj5gPT_D8kKDrBusIGfnfmtlrhxv/pub?gid=1203789969&single=true&output=csv&range=b20";
 	// 2 Forcefull haven       
                 fetch(url) 
                 .then(response => response.text())
@@ -295,7 +309,7 @@ function loadData (){
                   ); delete url;
                      delete text; 
 // =====================================================================================================================================================================================================       
-               	url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR45xjRksAnj4s3bWcLyARSjUWp7hY7rYcATEPty0MHEPdMT6-2WH2In9bjldlgTHSkR2SQn5Jl8tCm/pub?gid=1203789969&single=true&output=csv&range=b20";
+               	url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQgGVCkiEIqgEUQXFai3HUE5Z16kmKgBXAbtM49zPSWZIq7ADyWVj5gPT_D8kKDrBusIGfnfmtlrhxv/pub?gid=1203789969&single=true&output=csv&range=b21";
 	// 3 spiritual power gather         
                 fetch(url) 
                 .then(response => response.text())
