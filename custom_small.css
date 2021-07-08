@@ -182,9 +182,14 @@
 }
 
 
+
+
+
+
 .thinkclass{
     font-size: 1.5em;
-  left: 1%;
+  left: -18%;
+  color: blue;
   text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
   margin-top: -0.7em;
   position: absolute;
@@ -193,7 +198,8 @@
 }
 #thinkscore{
     font-size: 1.5em;
-  right: 6%;
+    left: 0%;
+    color: blue;
   text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
   margin-top: -0.7em;
   position: absolute;
@@ -203,16 +209,18 @@
 
 .forcefullclass{
     font-size: 1.5em;
-  left: 1%;
+  left: -18%;
   text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
   margin-top: -0.7em;
+  color: blue;
   position: absolute;
   width: 100%;
   top: 44vh; 
 }
 #forcescore{
     font-size: 1.5em;
-  right: 6%;
+    left: 0%; 
+    color: blue;
   text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
   margin-top: -0.7em;
   position: absolute;
@@ -222,17 +230,19 @@
 
 .powerclass{
     font-size:1.5em;
-  left: 1%;
+  left: -18%;
   text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
   margin-top: -0.7em;
   position: absolute;
+  color: blue;
   width: 100%;
   top: 52vh; 
 }
 
 #powerscore{
     font-size: 1.5em;
-  right: 6%;
+  left: 0%;
+  color: blue;
   text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
   margin-top: -0.7em;
   position: absolute;
