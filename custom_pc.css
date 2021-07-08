@@ -5,12 +5,12 @@
     -webkit-filter: drop-shadow(5px 5px 5px rgba(70, 73, 240, 0.24));
     filter: drop-shadow(2px 5px 5px rgba(126, 128, 223, 0.432));
     animation: t_1_move 12s 0s 1;
-    left: -30%;
+    left: -160%;
     animation-fill-mode: forwards; animation-delay: 6s;
     
 } @keyframes t_1_move {
     0% {
-        left: -30%;
+        left: -160%;
     }
     100% {
         left: var(--t_1data); /*to move image to desired location */
@@ -31,14 +31,14 @@
   -webkit-filter: drop-shadow(5px 5px 5px rgba(70, 73, 240, 0.24));
   filter: drop-shadow(2px 5px 5px rgba(126, 128, 223, 0.432));
   animation: t2_move 12s 0s 1;
-  left: -30%;
+  left: -160%;
   animation-fill-mode: forwards; animation-delay: 6s;
 
 } 
 
 @keyframes t2_move {
   0% {
-      left: -30%;
+      left: -160%;
   }
   100% {
       left: var(--t_2data); /*to move image to desired location */
@@ -58,12 +58,12 @@ height: auto;
     -webkit-filter: drop-shadow(5px 5px 5px rgba(70, 73, 240, 0.24));
     filter: drop-shadow(2px 5px 5px rgba(126, 128, 223, 0.432));
     animation: t3_move 12s 0s 1;
-    left: -30%;
+    left: -160%;
     animation-fill-mode: forwards; animation-delay: 6s;
     
 } @keyframes t3_move {
     0% {
-        left: -30%;
+        left: -160%;
     }
     100% {
         left: var(--t_3data); /*to move image to desired location */
@@ -83,12 +83,12 @@ height: auto;
     -webkit-filter: drop-shadow(5px 5px 5px rgba(70, 73, 240, 0.24));
     filter: drop-shadow(2px 5px 5px rgba(126, 128, 223, 0.432));
     animation: t4_move 12s 0s 1;
-    left: -30%;
+    left: -160%;
     animation-fill-mode: forwards; animation-delay: 6s;
     
 } @keyframes t4_move {
     0% {
-        left: -30%;
+        left: -160%;
     }
     100% {
         left: var(--t_4data); /*to move image to desired location */
