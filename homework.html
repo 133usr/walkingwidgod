@@ -73,6 +73,8 @@ Deleting three lights -->
 			<li class="layer" data-depth="0.30"><div><h3  id="thinkscore">please_wait...</h3><h2 class="thinkclass"><strong>नए गीत सुनना </strong></h2></div></li>
 			<li class="layer" data-depth="0.30"><div> <h3  id="forcescore">please_wait...</h3><h2 class="forcefullclass"><strong>उपदेश पुस्तक (साइन लेना)</strong></h2></div></li>
 			<li class="layer" data-depth="0.30"><div> <h3  id="powerscore">please_wait...</h3><h2 class="powerclass"><strong>बाइबिल पढ़ना</strong></h2></div></li>
+			<li class="layer" data-depth="0.30"><div> <h2  id="to_day">sunday</h2><h2 class="to_dayclass"><strong>आज दिन: </strong></h2></div></li>
+	
 			<!--<li class="layer" data-depth="0.40"><h3 id="rcyscore" class="score2">Mornings Dew<em><br> Youth & Students</em></h3></li>
 			<li class="layer" data-depth="0.50"><h3 id="t_2_score" class="score3">Mornings Dew<em><br> Youth & Students</em></h3></li>
 			<li class="layer" data-depth="0.60"><h3 id="t_3_score" class="score4">Mornings Dew<em><br> Youth & Students</em></h3></li>-->
@@ -284,6 +286,24 @@ Deleting three lights -->
 	// ========================================================================================================================================================================================
 // TRYING TO NORMALIZE ; THAT IS NO NUMBER SCROLLS
 function loadMissionData (){
+
+	//  LOADING TODAY'S DAY FIRST OF ALL
+		var myDate = new Date();
+        var myDay = myDate.getDay();
+        
+        // Array of days.
+        var weekday = [' रविवार', ' सोमवार', ' मंगलवार',
+            ' बुधवार', ' गुरुवार', ' शुक्रवार', ' शनिवार'
+        ];
+		var dd = myDate.getDate() + '-';
+		var mm = myDate.getMonth()+1  + '-'; //becuase January is counted as  0.
+		var yyyy = myDate.getFullYear();
+
+		
+		day = weekday[myDay];
+		day = day + ' का मिशन '
+		const date_as_string = `${dd}${mm}${yyyy}${day}`; //concat variable which are numbers as strings		
+		document.querySelector("#to_day").innerHTML = date_as_string;
   // ========================================================================================================================================================================================
                url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQgGVCkiEIqgEUQXFai3HUE5Z16kmKgBXAbtM49zPSWZIq7ADyWVj5gPT_D8kKDrBusIGfnfmtlrhxv/pub?gid=1203789969&single=true&output=csv&range=b19";
  // 1 think of heaven         
